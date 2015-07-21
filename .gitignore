@@ -1,2 +1,5 @@
 runmongo
 data/
+.gradle
+build/
+
