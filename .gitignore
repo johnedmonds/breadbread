@@ -1,5 +1,3 @@
-runmongo
-data/
 .gradle
 build/
 
