@@ -2,26 +2,25 @@ package com.breadbreadbook.data;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.mongojack.ObjectId;
+import org.bson.types.ObjectId;
 
 /**
  * A single step in the recipe (e.g. chop carrots).
  */
 public class Step {
-    private final long id;
+    private final ObjectId id;
     private final String instruction;
     
     @JsonCreator
     public Step(
-        @JsonProperty("_id") long id,
+        @JsonProperty("_id") ObjectId id,
         @JsonProperty("instruction") String instruction) {
         this.id = id;
         this.instruction = instruction;
     }
     
-    @ObjectId
     @JsonProperty("_id")
-    public long getId() {
+    public ObjectId getId() {
         return id;
     }
     

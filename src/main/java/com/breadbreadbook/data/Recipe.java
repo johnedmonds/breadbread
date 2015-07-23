@@ -1,6 +1,6 @@
 package com.breadbreadbook.data;
 
-import org.mongojack.ObjectId;
+import org.bson.types.ObjectId;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.google.common.collect.ImmutableList;
@@ -9,7 +9,7 @@ import com.google.common.collect.ImmutableList;
  * A single recipe.
  */
 public class Recipe {
-    private final long id;
+    private final ObjectId id;
     private final String name;
     private final ImmutableList<Step> steps;
     
@@ -18,7 +18,7 @@ public class Recipe {
      */
     @JsonCreator
     public Recipe(
-        @JsonProperty("_id") long id,
+        @JsonProperty("_id") ObjectId id,
         @JsonProperty("name") String name,
         @JsonProperty("steps") ImmutableList<Step> steps) {
         this.id = id;
@@ -26,9 +26,8 @@ public class Recipe {
         this.steps = steps;
     }
     
-    @ObjectId
     @JsonProperty("_id")
-    public long getId() {
+    public ObjectId getId() {
         return id;
     }
     
