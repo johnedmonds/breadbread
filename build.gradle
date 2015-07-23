@@ -10,6 +10,9 @@ dependencies {
       [group: 'com.google.guava', name: 'guava', version: '18.0'],
       [group: 'org.mongojack', name: 'mongojack', version: '2.1.0'],
       [group: 'com.google.inject', name: 'guice', version: '3.0'],
+      [group: 'com.google.inject.extensions', name: 'guice-servlet', version: '3.0'],
+      [group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.2.5.v20141112'],
+      [group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.2.5.v20141112'],
   )
 }
   

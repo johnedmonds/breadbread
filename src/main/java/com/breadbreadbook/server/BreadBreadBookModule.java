@@ -1,12 +1,13 @@
-package com.breadbreadbook.modules;
+package com.breadbreadbook.server                     ;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.mongodb.MongoClient;
+import com.google.inject.servlet.ServletModule;
 
-public class BreadBreadBookModule extends AbstractModule {
+public class BreadBreadBookModule extends ServletModule {
   @Override
-  public void configure() {
+  public void configureServlets() {
   }
   
   @Provides
