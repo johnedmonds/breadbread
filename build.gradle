@@ -9,6 +9,7 @@ dependencies {
       'org.mongodb:mongo-java-driver:3.0.2',
       [group: 'com.google.guava', name: 'guava', version: '18.0'],
       [group: 'org.mongojack', name: 'mongojack', version: '2.1.0'],
+      [group: 'com.google.inject', name: 'guice', version: '3.0'],
   )
 }
   
