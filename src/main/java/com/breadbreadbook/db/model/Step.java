@@ -1,4 +1,4 @@
-package com.breadbreadbook.data;
+package com.breadbreadbook.db.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

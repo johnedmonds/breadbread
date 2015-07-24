@@ -6,7 +6,7 @@ import org.mongojack.JacksonDBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import org.mongojack.JacksonDBCollection;
-import com.breadbreadbook.data.Recipe;
+import com.breadbreadbook.db.model.Recipe;
 import com.mongodb.client.model.Filters;
 import org.bson.types.ObjectId;
 

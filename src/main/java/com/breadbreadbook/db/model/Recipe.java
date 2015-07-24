@@ -1,4 +1,4 @@
-package com.breadbreadbook.data;
+package com.breadbreadbook.db.model;
 
 import org.bson.types.ObjectId;
 import com.fasterxml.jackson.annotation.JsonProperty;
